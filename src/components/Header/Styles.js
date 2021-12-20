@@ -7,12 +7,12 @@ export const AppHeader = styled.header`
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	font-size: calc(6px + 2vmin);
+	font-size: calc(6px + 2.5vmin);
 	color: white;
 `;
 
 export const HeaderTitle = styled.h1`
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	margin-left: 4vmin;
 	align-self: flex-start;
 `

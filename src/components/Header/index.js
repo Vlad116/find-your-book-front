@@ -30,7 +30,7 @@ const BurgerButton = styled(IconButton, { shouldForwardProp: (prop) => prop !== 
 		})
   }))
 
-const Header = ({ title, handleDrawerOpen, open, drawerWidth, withSearch }) => {
+const Header = ({ title, handleDrawerOpen, open, drawerWidth, withSearch, searchQuery, setSearchQuery }) => {
 	return (
 		<AppBar position="fixed" open={open} drawerWidth={drawerWidth}>
 			<AppHeader>
@@ -47,7 +47,7 @@ const Header = ({ title, handleDrawerOpen, open, drawerWidth, withSearch }) => {
 						<MenuIcon />
 					</BurgerButton>}
 				<HeaderTitle>{title}</HeaderTitle>
-				{withSearch && <SearchBar />}
+				{withSearch && <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}
 			</AppHeader>
 		</AppBar>
   	);

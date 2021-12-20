@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
 import { StyledSearchBar } from './Styles'
 
-const SearchBar = () => {
-	const [searchText, setSearchText] = useState("")
-	const searchReq = (text) => {
-		console.log(text);
-	}
-	console.log(searchText)
+const SearchBar = ({ searchQuery, setSearchQuery}) => {
   	return (
-		<StyledSearchBar value={searchText}
-			onChange={(newValue) => setSearchText(newValue)}
-			onRequestSearch={() => searchReq(searchText)}
+		<StyledSearchBar value={searchQuery}
+			onChange={(newValue) => console.log(newValue)}
+			onRequestSearch={(newValue) => setSearchQuery(newValue)}
 		/>
   	);
 }

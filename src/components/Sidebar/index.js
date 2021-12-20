@@ -1,4 +1,8 @@
 import React, { useState }from 'react';
+import { 
+	Link as RouterLink,
+} from 'react-router-dom';
+import MaterialLink from '@mui/material/Link';
 import { styled, useTheme } from "@mui/material/styles";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -46,12 +50,17 @@ const Sidebar = ({ drawerWidth, handleDrawerClose, open }) => {
 			</DrawerHeader>
 			<Divider />
 			<List>
-				{["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-					<ListItem button key={text}>
-					{/* <ListItemIcon>
-						{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-					</ListItemIcon> */}
-					<ListItemText primary={text} />
+				{["Login", "Register", "Books", "Authors"].map((text, index) => (
+					<ListItem button key={text} >
+						<MaterialLink 
+							component={RouterLink}
+							underline="none"
+							color="inherit" 
+							sx={{ display: "flex", alignItems: "center", justifyContent: "center", paddingBottom: "0.8vw", paddingTop: "0.8vw" }}
+							to={`/${text.toLowerCase()}`}>
+							{text}
+						</MaterialLink>
+						{/* <ListItemText primary={text}  /> */}
 					</ListItem>
 				))}
 			</List>
