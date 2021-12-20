@@ -41,16 +41,9 @@ export default function Login() {
 		event.preventDefault();
 		const formData = new FormData(event.currentTarget);
 		// eslint-disable-next-line no-console
-		console.log(formData);
-		console.log({
-			email: formData.get('email'),
-			password: formData.get('password'),
-		});
+
 		getData(`${authhost}/users`).then((data) => {
-			console.log(data);
 			const user = data.find(item => item.email === formData.get('email') && item.password === formData.get('password'))
-			console.log(user.id);
-			console.log(user.username);
 			localStorage.setItem("userId", user.id)
 			localStorage.setItem("username", user.username)
 			navigate('/books')

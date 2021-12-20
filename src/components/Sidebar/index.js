@@ -7,7 +7,6 @@ import { styled, useTheme } from "@mui/material/styles";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -60,7 +59,6 @@ const Sidebar = ({ drawerWidth, handleDrawerClose, open }) => {
 							to={`/${text.toLowerCase()}`}>
 							{text}
 						</MaterialLink>
-						{/* <ListItemText primary={text}  /> */}
 					</ListItem>
 				))}
 			</List>

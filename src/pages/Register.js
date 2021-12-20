@@ -54,10 +54,6 @@ export default function Register() {
 						username: formData.get('username'),
 					}
 				).then((data) => {
-					console.log(data);
-					// localStorage.setItem("userId", data.id)
-					// localStorage.setItem("username", data.username)
-					console.log(localStorage.getItem("userId"));
 					navigate('/login')
 				})
 			} else {

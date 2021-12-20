@@ -7,9 +7,6 @@ import {
 } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import {  Home, Login, Register, Books, Book, Authors, Author } from './pages'
-// import Header from './components/Header';
-// import Sidebar from './components/Sidebar'
-// import './App.css';
 
 // A wrapper for <Route> that redirects to the login
 // screen if you're not yet authenticated.
@@ -28,9 +25,18 @@ const App = () => {
 				<Route path={'login'} element={<Login/>} />
 				<Route path={'register'} element={<Register/>}/>
 				<Route path={'/'} element={<MainLayout/>}>
-					<Route index element={<Home/>}/>
+					<Route index element={
+							<PrivateRoute>
+								<Books/>
+							</PrivateRoute>}
+					/>
 					<Route path={'books'} element={<MainLayout/>}>
-						<Route index element = {<Books/>}/>
+						<Route index element = {
+								<PrivateRoute>
+									<Books/>
+								</PrivateRoute>
+							}
+						/>
 						<Route 
 							path={':bookId'} 
 							element={
@@ -41,7 +47,12 @@ const App = () => {
 						/>
 					</Route>
 					<Route path={'authors'} element={<MainLayout/>}>
-						<Route index element = {<Authors/>}/>
+						<Route index element = {
+							<PrivateRoute>
+								<Authors/>
+							</PrivateRoute>
+							}
+						/>
 						<Route 
 							path={':authorId'} 
 							element={
@@ -51,14 +62,6 @@ const App = () => {
 							}
 						/>
 					</Route>
-					{/* <Route 
-						path={'catalog'} 
-						element={
-							<PrivateRoute>
-								<Shop/>
-							</PrivateRoute>
-						}
-					/> */}
 				</Route>
 			</Routes>
 		</BrowserRouter>

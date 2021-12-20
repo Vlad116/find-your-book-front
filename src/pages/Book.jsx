@@ -28,9 +28,7 @@ const Book = () => {
 	useEffect(() => {
 		if(isLoading) {
 			setLoading(true)
-			console.log(bookId)
 			getData(`${host}/book/${bookId}`).then((json) => {
-				console.log(json)
 				setBook(json)
 				setLoading(false)
 			})
