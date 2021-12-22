@@ -28,7 +28,8 @@ const App = () => {
 					<Route index element={
 							<PrivateRoute>
 								<Books/>
-							</PrivateRoute>}
+							</PrivateRoute>
+						}
 					/>
 					<Route path={'books'} element={<MainLayout/>}>
 						<Route index element = {
@@ -48,9 +49,9 @@ const App = () => {
 					</Route>
 					<Route path={'authors'} element={<MainLayout/>}>
 						<Route index element = {
-							<PrivateRoute>
-								<Authors/>
-							</PrivateRoute>
+								<PrivateRoute>
+									<Authors/>
+								</PrivateRoute>
 							}
 						/>
 						<Route 
