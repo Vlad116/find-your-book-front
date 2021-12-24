@@ -5,16 +5,18 @@ import {
 import MaterialLink from '@mui/material/Link';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import BookIcon from '@mui/icons-material/Book';
 import "../../../App.css";
+import bookUndefined from '../../../assets/img/poster-undefined.jpg'
 import { isNull } from 'lodash';
 
-const BookCard = ({ id, name, description, year, tags, genres, authors }) => {
-
+const BookCard = ({ id, name, description, image, year, tags, genres, authors }) => {
+	// console.log(image)
 	return (
-	<Card sx={{ maxWidth: 1400 }}>
+	<Card sx={{ maxWidth: 1400, display: 'flex', flexDirection: "row", alignItems: "flex-start", justifyContent: "space-around" }}>
 		<CardContent>
 			<Typography gutterBottom variant="h5" component="div" sx={{textAlign: "start", display: "flex", flexDirection: "row"}}>
 				{<MaterialLink 
@@ -92,6 +94,13 @@ const BookCard = ({ id, name, description, year, tags, genres, authors }) => {
 				}
 			</Box>}
 		</CardContent>
+		<CardMedia
+			component="img"
+			className='CardImage'
+			image={image ? image : bookUndefined}
+			sx={{ width: '300px', height: '400px', marginInline: '1vw', marginBlock: '1vw' }}
+			alt="Card image"
+		/>
   	</Card>
   );
 };

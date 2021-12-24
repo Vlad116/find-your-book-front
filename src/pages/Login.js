@@ -17,7 +17,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { getData } from '../utils/api'
-import { authhost } from '../constants'
+import { jsonserverhost } from '../constants'
 
 function Copyright(props) {
   return (
@@ -42,7 +42,7 @@ export default function Login() {
 		const formData = new FormData(event.currentTarget);
 		// eslint-disable-next-line no-console
 
-		getData(`${authhost}/users`).then((data) => {
+		getData(`${jsonserverhost}/users`).then((data) => {
 			const user = data.find(item => item.email === formData.get('email') && item.password === formData.get('password'))
 			localStorage.setItem("userId", user.id)
 			localStorage.setItem("username", user.username)

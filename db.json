@@ -1,10 +1,116 @@
 {
-  "users": [
-    {
-      "email": "test1@test.ru",
-      "password": "testtest",
-      "username": "Test User",
-      "id": 1
-    }
-  ]
+	"books": [
+		{
+			"id": "robin_khobb_uchenik_ubiytsy",
+			"poster_url": "https://cv6.litres.ru/pub/c/audiokniga/cover_330/66746468-robin-hobb-uchenik-ubiycy-66746468.jpg"
+		},
+		{
+			"id": "vladimir_obruchev_plutoniya",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "zhyul_vern_vlastelin_mira",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "arkadiy_i_boris_strugatskie_pyat_lozhek_eliksira",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "frenk_gerbert_kapitul_dyuny",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "garri_garrison_spetsialist_po_etike",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "dzho_aberkrombi_luchshe_podavat_kholodnym",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "charlz_bukovski_zapiski_potentsialnogo_samoubiytsy",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "charlz_bukovski_populyarnaya_lichnost",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "charlz_bukovski_glaza_kak_nebo",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "brent_uiks_po_tu_storonu_teni",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "charlz_bukovski_nochnye_ulitsy_bezumiya",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "brent_uiks_na_krayu_teni",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "leonid_andreev_chernye_maski",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "leonid_leonov_begstvo_mistera_mak_kinli",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "stepan_vartanov_mayatnik",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "banana_esimoto_tsugumi",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "lidiya_charskaya_sopernitsy",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "kennet_balmer_klyuchi_k_izmereniyam",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "aleksey_smirnov_nogi",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "oskar_uayld_zamechatelnaya_raketa",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "vasiliy_vladimirskiy_luchshee_za_god_2007_rossiyskoe_fentezi_fantastika_mistika",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "yana_alekseeva_okovy_ravnovesiya",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "shimun_vrochek_vysokiy_pryzhok",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		},
+		{
+			"id": "dzheyn_osten_lyubov_i_druzhba",
+			"poster_url": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/125121-vladimir-obruchev-plutoniya.jpg"
+		}
+	],
+	"authors": [		{
+		"id": "robin_khobb",
+		"poster_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Robin_Hobb_20060929_Fnac_01.jpg/266px-Robin_Hobb_20060929_Fnac_01.jpg"
+	}],
+	"users": [
+		{
+		"email": "test1@test.ru",
+		"password": "testtest",
+		"username": "Test User",
+		"id": 1
+		}
+  	]
 }
